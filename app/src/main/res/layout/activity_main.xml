@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:ems="10"
+        android:capitalize="none"
+        android:inputType="textNoSuggestions"
+        android:selectAllOnFocus="false"
+         />
+
+    <EditText
+        android:id="@+id/pname"
+        android:layout_width="358dp"
+        android:capitalize="none"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="181dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+            />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+android:inputType=""
+        android:layout_marginTop="158dp"
+        android:text="Name :"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="185dp"
+        android:layout_height="29dp"
+        android:layout_above="@+id/pname"
+
+        android:text="Partner Name:"
+        android:textSize="25sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:id="@+id/edit_frame"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:animationCache="true"
+        android:background="#f0d9ac"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:text=":::::::::::::::::::::::::::::::JEBA TECH SOLUTIONS::::::::::::::::::::::::JEBA TECH SOLUTIONS::::::::::::::::::::::::::::::::::::::::"
+            android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FLAMES"
+            android:textAllCaps="true"
+            android:textColor="#73f359"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:fontFamily="casual" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="196dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="81dp"
+
+
+        android:layout_marginStart="-17dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="SHOW ME !"
+        android:textColorHighlight="@android:color/holo_purple"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>
